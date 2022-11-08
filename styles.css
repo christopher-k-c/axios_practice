@@ -1,9 +1,21 @@
+:root{
+
+/* Red */
+    --background: rgb(179, 78, 78);
+    --card-background: rgb(179, 78, 78);
+    --type:rgb(255, 255, 255);
+
+}
+
 body{
     font-family: 'Roboto Mono', monospace;
-    background-color: bisque;
-/* margin: auto 0; */
-text-align: center;
+    background-color: var(--background);
+    text-align: center;
 
+}
+
+h1{
+    text-transform: uppercase;
 }
 
 .grid{
@@ -22,6 +34,17 @@ text-align: center;
 .employee{
     text-align: center;
     margin: 10px;
+    padding: 20px;
+    border: 0px solid black;
+    border-radius: 5%;
+    filter: drop-shadow(0px 10px 14px rgba(0, 0, 0, 0.446));
+    background-color: var(--card-background);
+    color: var(--type);
+}
+
+.employee > .first_name{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
 }
 
 img{
@@ -36,9 +59,8 @@ img{
     height: 200px; 
     overflow: hidden; 
     border-radius: 50%; 
-    filter: drop-shadow(25px 10px 14px #dd6a4486);
-    mix-blend-mode: multiply;
-
+    filter: drop-shadow(0px 15px 5px rgba(0, 0, 0, 0.332));
+    border: 1px solid rgb(255, 255, 255);
 } 
     
 #P12 .image-container img { 
@@ -47,7 +69,23 @@ img{
     margin-left: -50px;
 }
 
-
 .image-container img:hover{
     filter: grayscale(100%);
+}
+
+@media (max-width: 1250px) {
+   
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+   
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }

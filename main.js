@@ -33,10 +33,13 @@ const getHandelerFunc = (data) => {
 
 
         imageContainer.appendChild(image)
+        employee.appendChild(imageContainer);
         employee.appendChild(firstNames);
         employee.appendChild(email);
-        employee.appendChild(imageContainer);
+        
         container.appendChild(employee);
 
     })
 }
+
+
