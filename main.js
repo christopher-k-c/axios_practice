@@ -40,18 +40,3 @@ const getHandelerFunc = (data) => {
 
     })
 }
-
-// Post Request
-// axios.post('https://reqres.in/api/users', {
-//     name: "John",
-//     job: "Developer"
-// })
-// .then((res)=> postHandelerFunc(res))
-// .catch((err) => console.log(err))
-
-
-// const postHandelerFunc = (data) => {
-
-//     console.log(data)
-
-// }
